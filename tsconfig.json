@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target"                          : "es5",              // Указывает на целевую версию ECMAScript
+    "lib"                             : ["dom", "es2015"],  // Указывает на библиотеки, которые будут включены в компиляцию
+    "jsx"                             : "react-jsx",        // Определяет, как TypeScript должен интерпретировать
+    "module"                          : "commonjs",         // Указывает на тип модуля, который будет использоваться при генерации кода
+    "esModuleInterop"                 : true,               // Упрощает использование модулей
+    "skipLibCheck"                    : true,               // Пропускает проверку деклараций библиотек
+    "forceConsistentCasingInFileNames": true,               // Обязывает соответствие регистра в именах файлов
+    "noFallthroughCasesInSwitch"      : true,               // обязывается switch case завершаться только break, return, throw
+    "moduleResolution"                : "node",             // указывает на то, как находить компоненты для импорта (если в файле index.tsx, то он по одномусделает, в другом случае иначе)
+    "resolveJsonModule"               : true,               // Позволяет TypeScript импортировать JSON-файлы как модули
+    "isolatedModules"                 : true                // Изолирует каждую компоненту и не дает доступа к глобальному объекту
+  },
+  "types": ["node"],
+  "include" : ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude" : ["node_modules"]
+}
